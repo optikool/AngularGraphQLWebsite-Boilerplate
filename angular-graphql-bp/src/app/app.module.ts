@@ -11,6 +11,10 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { CoreModule } from './core/core.module';
+import { FeaturesModule } from './features/features.module';
+import { SharedModule } from './shared/shared.module';
+import { ViewsModule } from './views/views.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     StoreModule.forRoot({}, {}),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([]),
-    StoreRouterConnectingModule.forRoot()
+    StoreRouterConnectingModule.forRoot(),
+    CoreModule,
+    FeaturesModule,
+    SharedModule,
+    ViewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
