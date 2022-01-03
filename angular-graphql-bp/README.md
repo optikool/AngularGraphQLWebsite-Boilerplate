@@ -5,7 +5,7 @@ This is an Angular Boilerplate project for building Angular apps using GraphQL, 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.14.
 
 ## Setup
-Run `git clone https://github.com/optikool/Timeline-Maker.git` to clone repo.
+Run `git clone https://github.com/optikool/AngularGraphQLWebsite-Boilerplate.git` to clone repo.
 
 Run `npm install` to install node packages. 
 
